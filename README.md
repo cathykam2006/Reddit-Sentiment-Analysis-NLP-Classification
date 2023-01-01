@@ -2,7 +2,7 @@
 
 ## 1. Problem Statement:
 </br>
-As a data scientist and a linguist, I would like to help marketers and game manufacturers to better promote the pokemon franchise as well as Reddit to automate their post classification process. Therefore, this project aims to (1) identify the keywords that could act as a mjor classifier to distingish r/pokemon from r/pokemontrade; (2) users' interest and sentiment and (3) create a model that could classify the posts effectively based on the keywords.
+As a data scientist and a linguist, I would like to help marketers and game manufacturers to better promote the pokemon franchise as well as Reddit to automate their post classification process. Therefore, this project aims to (1) identify the keywords that could act as a major classifier to distingish r/pokemon from r/pokemontrade; (2) users' interest and sentiment and (3) create a model that could classify the posts effectively based on the keywords.
 
 ## Process:
 First, to **use Pushshift's API as a form of webscraping to collect posts from two subreddits**. 
