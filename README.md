@@ -1,6 +1,6 @@
 # Project 3 - Sentiment Analysis + Reddit Classification
 
-## 1. Problem Statement:
+# 1. Problem Statement:
 </br>
 As a data scientist and a linguist, I would like to help marketers and game manufacturers to better promote the pokemon franchise as well as Reddit to automate their post classification process. Therefore, this project aims to (1) identify the keywords that could act as a major classifier to distingish r/pokemon from r/pokemontrade; (2) users' interest and sentiment and (3) create a model that could classify the posts effectively based on the keywords.
 
@@ -60,16 +60,19 @@ AFINN is an English word listed developed by Finn Årup Nielsen.
 ---
 
 ## 5. Evaluation and Conceptual Understanding
+<br/>
+For predictive modeling, this project aims to compare the accuracy of a pipeline that encompass CountVectorizer and MultinomialNB, versus one that encompass CountVectorizer and TfidfVectorizer. What CountVectorizer does is to transform a given text into a vector on the basis of the frequency (count) of each word that occurs in the entire text. This provides a foundation to apply both multinomial Naive Bayes classifier and Term frequency Inverse document frequency (TFIDF) at a later stage.
 
-For predictive modeling, this project aims to compare the accuracy of a pipline that encompass CountVectorizer and MultinomialNB, versus one that encompass CountVectorizer and TfidfVectorizer. What CountVectorizer does is to transform a given text into a vector on the basis of the frequency (count) of each word that occurs in the entire text. This provides a foundation to apply both multinomial Naive Bayes classifier and Term frequency Inverse document frequency (TFIDF) at a later stage.
 
 Multinomial Naive Bayes classifier is a probabilistic learning method that is mostly used in Natural Language Processing (NLP). The algorithm is based on the Bayes theorem and predicts the tag of a text such as a piece of email or newspaper article. It calculates the probability of each tag for a given sample and then gives the tag with the highest probability as output.
 
 Naive Bayes classifier is a collection of many algorithms where all the algorithms share one common principle, and that is each feature being classified is not related to any other feature. The presence or absence of a feature does not affect the presence or absence of the other feature.
 
+
 While on the other hand, Term frequency Inverse document frequency (TFIDF) is a statistical formula to convert text documents into vectors based on the relevancy of the word. It is based on the bag of the words model to create a matrix containing the information about less relevant and most relevant words in the document. 
 
 TF-IDF is particularly useful in NLP tasks, topic modeling, and machine learning tasks. It helps algorithms to use the importance of the words to predict outcomes. 
+
 
 In this project, we are going to compare the accuracy from each of these models and find out the best one which can help better predict the topic of the post and the subreddit that they should belong to.
 
@@ -222,3 +225,7 @@ While only a small minority of adults (>10) were engaging in the 'pokemon' subre
 
 ### F) Subreddit Engagement by Word Count
 According to the post count, 'pokemontrade' subreddit has significant a larger number of word count compared to 'pokemon'. It is almost double of what 'pokemon' subreddit has, implicating a higher user engagement rate overall. 
+
+
+# 7. Extended Application in the future
+The model that has the best prediction score can be applied to Reddit app to automate the post categorization process, where users will no longer need to proceed a designated sureddit to leave their comments, but to simply leave a comment and let reddit sort the categroy by itself. This will help save users' time in logistics and the navigation process.
