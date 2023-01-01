@@ -149,7 +149,8 @@ Meowriisa                2685205.0
 rtgreen                  2683799.0
 </br>
 bwo0                     2618802.0
-Name: subreddit_subscribers, dtype
+
+
 </br>
 **For 'pokemon' subreddit:**
 </br>
