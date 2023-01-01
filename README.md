@@ -34,6 +34,7 @@ d. Who are the influencers who have the most subscribers?
 
 e. Are adults the majority of the users in these forums?
 
+---
 
 ## 2. Data Collection
 
@@ -48,6 +49,7 @@ AFINN is an English word listed developed by Finn Årup Nielsen.
 #Words scores range from minus five (negative) to plus five (positive). 
 #The English language dictionary consists of 2,477 coded words.
 
+---
 
 4. Preprocessing & Modeling
 
@@ -55,6 +57,7 @@ AFINN is an English word listed developed by Finn Årup Nielsen.
 
 **Option 2: Pipeline: CountVectorizer + Term frequency Inverse document frequency (TFIDF) +  MultinomialNB**
 
+---
 
 ## 5. Evaluation and Conceptual Understanding
 
@@ -64,18 +67,21 @@ Multinomial Naive Bayes classifier is a probabilistic learning method that is mo
 
 Naive Bayes classifier is a collection of many algorithms where all the algorithms share one common principle, and that is each feature being classified is not related to any other feature. The presence or absence of a feature does not affect the presence or absence of the other feature.
 
-
 While on the other hand, Term frequency Inverse document frequency (TFIDF) is a statistical formula to convert text documents into vectors based on the relevancy of the word. It is based on the bag of the words model to create a matrix containing the information about less relevant and most relevant words in the document. 
 
 TF-IDF is particularly useful in NLP tasks, topic modeling, and machine learning tasks. It helps algorithms to use the importance of the words to predict outcomes. 
 
-
 In this project, we are going to compare the accuracy from each of these models and find out the best one which can help better predict the topic of the post and the subreddit that they should belong to.
 
+---
+
 ## 6. Conclusion / Recommendation
+
 According to the accruacy score shown below, Term frequency Inverse document frequency (TFIDF) crowns an accuracy score of 95% testing R2 score, which apparently does a slightly better job on classifying the reddit posts by just  MultinomialNB, which has 94% testing R2 score.
 
 The reason why it performs slightly better is because Term frequency Inverse document frequency (TFIDF) convert text documents into vectors based on the relevancy of the word, it takes natural human communication context into account. Comparing to a sole MultinomialNB, which only calculates the probability of each tag for a given sample, it didn't consider any contexts nor associating other features. Probabiltiy is its sole priority, which may or may not resemble entirely what a natural context is like for communicating online. 
+
+---
 
 ### A) To better automate the categorization process for better sub-topic organization for a big forum like Reddit, we can we distinguish posts that have the following buzzwords:
 ## <font color='red'> For 'pokemon' subreddit:</font>
@@ -89,16 +95,22 @@ The reason why it performs slightly better is because Term frequency Inverse doc
 <font color='green'>'egg', 'move', 'shiny','adament', 'adament', 'timid', 'levitate', 'mirror coat', 'events', 'trading', 'dream ball', 'beast ball', 'looking, 'offers', 'If', 'evolve', '6iv', 'egg moves'</font>
 <font color='green'>'LF' (Looking For),  'FT' (For Trade) (The most crucial differentiators)
   
+  ---
+  
   ### B) The major concerns of 'pokemontrade' and 'pokemon' resulted in subtle differences:
 Pokemontrade subreddit users usually care about about their own mastery of the pokedex, or own pursuits of shiny collections, which tends to be more practical. While for pokemon subreddit users are looking for extending their game network by casual greeting; exchanging friend codes; opinions about different generations and; new game features such as 'Wonder Trade'. 
 
 According to the sentiment analysis, while both subreddits resulted in net positive sentiment scores, pokemontrade tends to indicate higher satisfactory rate and positive emotions. Whereas 'pokemon' subreddit serves as a more generic discussion forum for users to express their opinions. Sometimes, the opinion could be good or bad, depending on the users' experiences. For example, the recent Scarlett/ Violet series was critcised negatively by some for its awful technical aspects, where  the game visual elements were often misplaced and dislocated. On the contrary, 'pokemontrade' seems like more a vibrant, energetic, wishful place where users can throw their wishes out and have them fulfilled accordingly. 
+  
+  ---
   
   ### C) The heated topics that are discussed among the users in both 'pokemon' and 'pokemontrade' subreddits
 
  For 'pokemon' subreddit, the most heated discussion topics are probably violet and scarlett, for example, some legendary/special pokemons that are only exclusive to the generation, as well as some general Q&A, opinion seeking related to the game.
  
  For 'pokemontrade' subreddit, the most heated discussion topics seem to be shiny, rare high IV, personality traits / ability pokemons, which people are seeking most of the time.
+  
+  ---
   
   ### D) The influencers who have the most subscribers
 
@@ -198,11 +210,15 @@ NoEnd9111               12056990.0
 </br>
 Nyuu222                 11885675.0
 
+---
+
 ### E) Whether adults are the majority of the users in these forums
 
 It turns out the kids or people under 18 are the majority accounted for these two subreddit users.
 
 While only a small minority of adults (>10) were engaging in the 'pokemon' subreddit, more adults are engaging with the 'pokemontrade' subreddit instead. This reflects adults focus more on the practicality and unlocking achievements of the game, while kids spend more time in exchanging thoughts and extending network. 
+
+---
 
 ### F) Subreddit Engagement by Word Count
 According to the post count, 'pokemontrade' subreddit has significant a larger number of word count compared to 'pokemon'. It is almost double of what 'pokemon' subreddit has, implicating a higher user engagement rate overall. 
